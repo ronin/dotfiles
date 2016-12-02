@@ -1,0 +1,20 @@
+[color]
+  ui = auto
+
+[core]
+  autocrlf = input
+  editor = vim
+  excludesfile = ~/.gitignore
+
+[merge]
+  defaultToUpstream = true
+
+[push]
+  default = simple
+
+[rerere]
+  enabled = true
+
+[user]
+  name = Michał Młoźniak
+  email = m.mlozniak@gmail.com

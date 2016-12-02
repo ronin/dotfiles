@@ -23,8 +23,6 @@ set nowritebackup
 set noswapfile
 
 set undolevels=1000
-
-
 set list listchars=tab:»·,trail:·,nbsp:·
 set tabpagemax=50
 
@@ -146,3 +144,12 @@ function! HasPaste()
   endif
   return ''
 endfunction
+
+" --------------------
+" Mappings
+" --------------------
+
+let mapleader=","
+
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>

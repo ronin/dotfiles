@@ -67,9 +67,6 @@ set winheight=999
 set cmdheight=2
 set complete-=i
 
-set ttimeout
-set ttimeoutlen=100
-
 set splitbelow
 set splitright
 
@@ -159,3 +156,18 @@ let mapleader=","
 
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader><space> :nohlsearch<cr>
+nnoremap <leader>e :Explore<cr>
+
+nnoremap j gj
+nnoremap k gk
+
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>

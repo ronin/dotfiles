@@ -9,14 +9,13 @@ execute pathogen#infect()
 " --------------------
 
 set nocompatible
-
 set history=500
+set undolevels=1000
+set encoding=utf8
+set ffs=unix,dos,mac
 
 filetype plugin on
 filetype indent on
-
-set encoding=utf8
-set ffs=unix,dos,mac
 
 set laststatus=2
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
@@ -28,11 +27,10 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-set undolevels=1000
 set list listchars=tab:»·,trail:·,nbsp:·
 set tabpagemax=50
 
-set hid
+set hidden
 set foldcolumn=1
 
 " --------------------
